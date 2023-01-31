@@ -1,0 +1,2 @@
+Hello everything has been overwrite 
+Psomething is added in it  added using r+ mode

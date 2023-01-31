@@ -1,0 +1,3 @@
+Roshan,80000
+Rohan,60000
+Devendra,180000

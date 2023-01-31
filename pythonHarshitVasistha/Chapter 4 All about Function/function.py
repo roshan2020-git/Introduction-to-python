@@ -23,9 +23,16 @@ print(add_two_object(obj1,obj2))
 # function to return last char
 
 def last_char(name):
+    '''
+    this function takes and iterable and returns last element of iterable
+    :param name:
+    :return:
+    '''
     return name[-1]
 
 
+print("Printing doc sting of last char function")
+print(last_char.__doc__)
 print(last_char("Roshan"))
 
 

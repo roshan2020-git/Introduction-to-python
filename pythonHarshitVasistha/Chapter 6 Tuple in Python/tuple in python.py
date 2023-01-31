@@ -6,17 +6,18 @@ i.e once tuple is created we can't update data inside tuple
 '''
 ex_tuple = ('one', 'two ', 'three', 1, 2, 3, None, 1, 2, 5)
 # we can't append , insert , pop ,remove
-# tuple is used we don't need to update the data
+# tuple is used when  we don't need to update the data
 # Tuples are faster than list
 # methods in tuple
 # count , index  , len , slicing
-print(tuple)
+print(ex_tuple)
 # ex_tuple[0] = 23 # TypeError: 'tuple' object does not support item assignment
 print(ex_tuple.count(1))
 print(ex_tuple.index(1))
 print(len(ex_tuple))
 print(ex_tuple[0:5:2])
 print(ex_tuple[::-1])
+print(ex_tuple)
 
 # --------- **looping in tuple**---------
 mixed = tuple(range(1, 10))
@@ -36,6 +37,7 @@ print(type(word))
 print(word)
 
 # tuple without paranthesis
+
 guitars = 'yamaha', 'baton rouge', 'taylor'
 print(type(guitars))
 print(guitars)
@@ -53,11 +55,12 @@ list_inside_tuple = (1, 2, 3, ["ram", 2.0, None, False], "hii")
 # we have list at index 3
 list_inside_tuple[3].append("append")
 print(list_inside_tuple)
-list_inside_tuple[3].pop(2);
+list_inside_tuple[3].pop(2)
 print(list_inside_tuple)
 
 # ---------** function that can be used in tuple**----------
 # min(),max() , sum()
+
 tuple1 = (1, 2, 3, 4, 5)
 print(tuple1)
 print(min(tuple1))
@@ -87,8 +90,13 @@ print(nums)
 nums_list = list(nums) # tuple changed to list , original tuple did not change
 print(type(nums_list) , nums_list)
 print(type(nums) , nums)
-nums_str = str(nums) # tuple changed to string
+nums_str = str(nums) # whole tuple changed to string
 print(type(nums_str) , nums_str)
+print("tuple to string conversion ")
+print(nums_str[0] , len(nums_str))
+for i in range(31):
+    print(nums_str[i] , end=',')
+print()
 print(type(nums) , nums)
 list_to_str = str(nums_list)
 print(type(list_to_str) , list_to_str)

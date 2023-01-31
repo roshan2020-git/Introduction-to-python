@@ -1,0 +1,3 @@
+Roshan's salary is 80000
+Rohan's salary is 60000
+Devendra's salary is 180000

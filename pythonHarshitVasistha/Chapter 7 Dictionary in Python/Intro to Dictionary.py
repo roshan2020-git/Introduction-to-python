@@ -72,7 +72,7 @@ print(users['user2'].values())
 empty_dictionary = {}
 empty_dictionary['name'] = "myself"
 empty_dictionary['age'] = 19
-empty_dictionary['movies'] = ["DDLJ", "The Hindu", "The Legend Of Prince Rama"]
+empty_dictionary['movies'] = ["DDLJ", "The Hindu", "The Legend Of Prince Rama" , "movie" ,"name"]
 print(empty_dictionary)
 
 # in keyword and iteration in dictionary
@@ -154,6 +154,7 @@ popped_item_new = empty_dictionary.popitem()
 print(f"randomly deleted item from dictionary is {popped_item_new} and type is {type(popped_item_new)}")
 
 # update method in dictionary
+
 # syntax - dict1.update(dict2) -- return None but add element of dict2 in dict1 at the end
 dict1 = {
     'name': "Raju",
@@ -168,9 +169,11 @@ dict2 = {
     'hobbies': ['Cricket', 'Reading', 'coading', 'guitar']
 }
 
-print(type(
-    dict1.update(dict2)))  # if some keys of dict2 are same with dict1 then the previous key value pair gets updated
-print(dict1)
+print(f"printing dict1 : {dict1}")
+print(f"printing dict2 : {dict2}")
+print(type(dict1.update(dict2)))  # if some keys of dict2 are same with dict1 then the previous key value pair gets updated
+print(f"printing dict1 : {dict1}")
+print(f"printing dict2 : {dict2}")
 print(dict1.update({}))  # dict1 remains same as it is
 print(dict1)
 
@@ -219,7 +222,7 @@ print(d_range)
 # copy() method - returns a copy of the dictionary
 # d1 is d2 will check if d1 n d2 both points to same dict or not (is checks for memory address)
 # d1 == d2 will check if d1 and d2 have same key value pair or not (== checks for values)
-d_range_copy = d_range.copy()
+d_range_copy = d_range.copy() # does deep copy of anydata structure
 d_range_copy1 = d_range  # this won't make a copy , instead of this they will point to same dict
 print(f"proof of d_range_copy1 is same as d_range : {d_range_copy1 is d_range}")
 d_range_copy1.pop(1)  # popped key from original dict
@@ -229,7 +232,7 @@ print(f"printing d_range dict after deleting key 2 from d_range_copy {d_range}")
 print(f"printing d_range_copy dict after deleting key 2 from it{d_range_copy}")
 
 # -----------** More About get() method **-------------
-
+# syntax: dict_name.get(key , defaultvalue)  , default value can be anything which we want to get if key is not present in dictionary
 
 info = {'name': 'Roshan', 'age': 24, 'name': 'Gupta'}  # keys are unigue
 print(info)  # name will be overwritten with the value Gupta(which is the last value assigned to key 'name')

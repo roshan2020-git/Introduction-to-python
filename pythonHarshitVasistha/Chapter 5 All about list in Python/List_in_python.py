@@ -25,8 +25,7 @@ print(f"something will be done :{mixed[::-1]}")
 print(mixed)
 mixed[1] = "two"
 print(mixed)
-mixed[
-1:] = "two"  # in mixed the element before index 1 will remain as it is and after that each elemnt will be removed and each char of "two" will be the new item of list
+mixed[1:] = "two"  # in mixed the element before index 1 will remain as it is and after that each elemnt will be removed and each char of "two" will be the new item of list
 print(mixed)
 mixed[1:] = ["Three", "four", "five", False, 27.928, None]
 print(mixed)
